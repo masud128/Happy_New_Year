@@ -17,14 +17,14 @@
   position: relative;
   font-size: 7vw;
   color: #252839;
-  -webkit-text-stroke: 0.3vw rgb(34, 14, 14);
+  -webkit-text-stroke: 0.3vw rgb(80, 5, 5);
   text-transform: uppercase;
 }
 .code h4 {
   position: relative;
   font-size: 4vw;
   color: #252839;
-  -webkit-text-stroke: 0.2vw rgb(34, 14, 14);
+  -webkit-text-stroke: 0.2vw rgb(117, 8, 8);
   text-transform: uppercase;
 }
 .container .code {
@@ -41,7 +41,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  color: rgb(84, 114, 202);
+  color: rgb(7, 55, 199);
   -webkit-text-stroke: 0vw #383d52;
   border-right: 2px solid #01fe87;
   overflow: hidden;
