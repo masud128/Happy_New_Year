@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #252839;
+}
+.container h2 {
+  position: relative;
+  font-size: 7vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw rgb(34, 14, 14);
+  text-transform: uppercase;
+}
+.code h4 {
+  position: relative;
+  font-size: 4vw;
+  color: #252839;
+  -webkit-text-stroke: 0.2vw rgb(34, 14, 14);
+  text-transform: uppercase;
+}
+.container .code {
+  margin: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.container h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(84, 114, 202);
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 8s linear infinite;
+}
+.code h4::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: red;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 1px solid #01fe87;
+  overflow: hidden;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100%,
+  100% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+}
